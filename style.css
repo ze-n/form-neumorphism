@@ -30,9 +30,9 @@
     --form-w:300px;
     --form-h:350px;
     --form-radius:30px;
-    --clr-1:#e0eaf1;
-    --clr-2:#b5c9d4;
-    --clr-white:#fff  ;
+    --clr-1:#ecf0f3;
+    --clr-2:#c9cccf;
+    --clr-white:rgb(255, 255, 255)  ;
     --clr-gray:#777;
     --clr-accent-dark:#f68181;
     --clr-accent:#ef574c;
