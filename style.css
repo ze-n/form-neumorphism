@@ -61,10 +61,7 @@
   input{
     color:var(--clr-gray);
   }
-  box-icon{
-    fill:var(--clr-gray);
-    stroke:none;
-  }
+ 
   .form__button{
     background-color:var(--clr-accent);
     color:var(--clr-white);    
@@ -139,3 +136,12 @@
       inset -4px -4px 8px var(--clr-white);
   }
   
+  /* ///////////// */
+  /* special */
+  /* ///////////// */
+  .svg-icon{
+    --size:25px;
+    width:var(--size);
+    height:var(--size);
+    fill:var(--clr-gray);
+  }
