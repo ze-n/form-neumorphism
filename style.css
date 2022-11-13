@@ -30,12 +30,12 @@
     --form-w:300px;
     --form-h:350px;
     --form-radius:30px;
-    --clr-1:#e1f2f4;
-    --clr-2:#c9d7d8;
-    --clr-white:#edf6f7;
+    --clr-1:#e0eaf1;
+    --clr-2:#b5c9d4;
+    --clr-white:#fff  ;
     --clr-gray:#777;
-    --clr-accent:#ed9c9c;
-    --clr-accent-dark:#ef574c;
+    --clr-accent-dark:#f68181;
+    --clr-accent:#ef574c;
   }
   /* //////////////////// */
   /* Typography */
@@ -82,8 +82,6 @@
     padding-inline:2rem;
     padding-block:4rem;
     border-radius:var(--form-radius);
-    box-shadow:20px 20px 20px var(--clr-2),
-      -20px -20px 20px var(--clr-white);
     
   }
   
@@ -133,9 +131,20 @@
   /* ///////////////////////////// */
   /* details styles */
   /* ///////////////////////////////// */
+  .form{
+    --shadow:10px;
+    --nshadow:-10px;
+    --spread:18px;
+    box-shadow:var(--shadow) var(--shadow) var(--spread) var(--clr-2),
+      var(--nshadow) var(--nshadow) var(--spread) var(--clr-white);
+  }
   .username, .password{
-      box-shadow:inset 4px 4px 8px var(--clr-2),
-      inset -4px -4px 8px var(--clr-white);
+     
+    --shadow:4px;
+    --nshadow:-4px;
+    --spread:8px;
+    box-shadow:inset var(--shadow) var(--shadow) var(--spread) var(--clr-2),
+    inset var(--nshadow) var(--nshadow) var(--spread) var(--clr-white);
   }
   
   /* ///////////// */
