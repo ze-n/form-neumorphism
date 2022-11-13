@@ -1,0 +1,141 @@
+  /* //////////////////// */
+  /* style resets */
+  /* //////////////////// */
+
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  label{
+    display:block;
+  }
+  input,.form__button{
+    width:100%;
+  }
+  input,fieldset,.form__button{
+    border:none;
+    outline:none;
+    background:none;
+  }
+  .form__button{
+    cursor:pointer;
+  }
+  /* //////////////////////// */
+  /* variables */
+  /* //////////////////////// */
+  body{
+    --form-w:300px;
+    --form-h:350px;
+    --form-radius:30px;
+    --clr-1:#e1f2f4;
+    --clr-2:#c9d7d8;
+    --clr-white:#edf6f7;
+    --clr-gray:#777;
+    --clr-accent:#ed9c9c;
+    --clr-accent-dark:#ef574c;
+  }
+  /* //////////////////// */
+  /* Typography */
+  /* //////////////////// */
+  body{
+    font-family:'sans-serif';
+    letter-spacing:1px;
+    
+  }
+  legend{
+    font-size:14px;
+    line-height:1.5;
+    text-align:center;
+    
+  }
+  /* //////////////// */
+  /* colors  */
+  /* //////////////////// */
+  body{
+    background-color:var(--clr-1);
+  }
+  .form{
+    background-color:var(--clr-1);
+  }
+  input{
+    color:var(--clr-gray);
+  }
+  box-icon{
+    fill:var(--clr-gray);
+    stroke:none;
+  }
+  .form__button{
+    background-color:var(--clr-accent);
+    color:var(--clr-white);    
+  }
+  /* /////////////////// */
+  /*  layout  */
+  /* ////////////////////// */
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+  }
+  .form{
+    width:var(--form-w);
+    padding-inline:2rem;
+    padding-block:4rem;
+    border-radius:var(--form-radius);
+    box-shadow:20px 20px 20px var(--clr-2),
+      -20px -20px 20px var(--clr-white);
+    
+  }
+  
+  legend{
+    margin-bottom:2rem;
+    color:var(--clr-gray);
+   
+  }
+  .username{
+    margin-bottom:1rem;
+  }
+  input{
+    padding:1rem;
+    
+  }
+  .username,.password{
+    display:flex;
+    align-items:center;
+    padding-inline:1rem;
+    border-radius:18px;
+  }
+  
+  .form__button{
+    padding-block:.8rem;
+    border-radius:20px;
+    margin-top:2rem;
+  }
+  
+  .logo{
+    --size:90px;
+    width:var(--size);
+    height:var(--size);
+    display:block;
+    margin-inline: auto;
+    margin-bottom:1rem;
+    
+  }
+  /* ///////////////////////////////////// */
+  /* animations and transitions */
+  /* ////////////////////////////////////////// */
+  .form__button{
+    transition: background-color .3s ease;
+}
+  .form__button:hover,.form__button:focus,.form__button:active{
+    background-color:var(--clr-accent-dark);
+  }
+  /* ///////////////////////////// */
+  /* details styles */
+  /* ///////////////////////////////// */
+  .username, .password{
+      box-shadow:inset 4px 4px 8px var(--clr-2),
+      inset -4px -4px 8px var(--clr-white);
+  }
+  
